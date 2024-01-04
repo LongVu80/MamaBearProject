@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama Bear Safety Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header"> 
+        <h1 class="title" id="title">Mama Bear Safety Project</h1>
+        <div id="lineTop" class="line"></div>
+        <div id="content" class="hidden"></div>
+            <img src="mamaBear1.png" alt="Mama Bear" id="contentImage"  class="bear hidden">
+        <div id="lineBottom" class="line">
+
+        </div>
+            <div class="button-container" id="button">
+                <div onclick="showDiv('intro')" class="button">Intro</div>
+                <div onclick="showDiv('myApp')" class="button">My App</div>
+                <div onclick="showDiv('phoneSOS')" class="button">Phone SOS</div>
+            </div>
+        <!-- </div> -->
+            
+        
+    </div>
+    <div id="intro" class="content">
+        <!-- Content for Intro -->
+        <button class="close-btn" onclick="hideDivs()">Close</button>
+    </div>
+    <div id="myApp" class="content" style="display: none;">
+        <!-- Content for My App -->
+        <button class="close-btn" onclick="hideDivs()">Close</button>
+    </div>
+    <div id="phoneSOS" class="content" style="display: none;">
+        <!-- Content for Phone SOS -->
+        <button class="close-btn" onclick="hideDivs()">Close</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
